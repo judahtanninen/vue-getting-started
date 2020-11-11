@@ -31,6 +31,7 @@
           <!-- <heroes-list> -->
 
           <!-- <hero-detail> -->
+            <HeroDetail v-if="selectedHero" :hero="selectedHero" />
           <div v-if="selectedHero">
             <div class="card">
               <header class="card-header">
@@ -124,7 +125,7 @@
 
 <script>
 import { format } from 'date-fns';
-
+import HeroDetail from '@/components/hero-detail'
 import { displayDateFormat, ourHeroes } from '../shared';
 
 export default {
@@ -140,6 +141,8 @@ export default {
   created() {
     this.loadHeroes();
   },
+  components: { HeroDetail},
+
   computed: {
     fullName() {
       return this.selectedHero
