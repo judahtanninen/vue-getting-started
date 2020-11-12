@@ -8,7 +8,12 @@
         <div class="content">
           <div class="field">
             <label class="label" for="id">id</label>
-            <label class="input" name="id" readonly>{{ clonedHero.id }}</label>
+            <input
+             class="input"
+             name="id"
+              type="number"
+               v-model="clonedHero.id"
+               />
           </div>
           <div class="field">
             <label class="label" for="firstName">first name</label>
@@ -122,7 +127,7 @@ export default {
           this.capeMessage = 'One is all I need';
           break;
         case 2:
-          this.capeMessage = 'Alway have a spare';
+          this.capeMessage = 'Always have a spare';
           break;
         default:
           this.capeMessage = 'You can never have enough capes';
@@ -134,9 +139,6 @@ export default {
     'clonedHero.capeCounter': {
       immediate: true,
       handler(newValue, oldValue) {
-        console.log(
-          `CapeCounter watcher evalauted. old=${oldValue}, new=${newValue}`
-        );
         this.handleTheCapes(newValue);
       },
     },

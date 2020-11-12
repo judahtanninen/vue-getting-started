@@ -1,7 +1,7 @@
 <template>
   <div class="content-container">
     <div class="section content-title-group">
-      <h2 class="title">Heroes</h2>
+      <h2 class="title">Gi Joes</h2>
       <div class="columns">
         <div class="column is-8" v-if="heroes">
           <ul v-if="!selectedHero">
@@ -21,7 +21,7 @@
                     @click="selectHero(hero)"
                   >
                     <i class="fas fa-check"></i>
-                    <span>Select</span>
+                    <span>Click Here</span>
                   </button>
                 </footer>
               </div>

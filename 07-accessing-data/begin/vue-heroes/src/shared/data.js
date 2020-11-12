@@ -6,7 +6,7 @@ const ourHeroes = [
     id: 10,
     firstName: 'Ella',
     lastName: 'Papa',
-    capeCounter: 1,
+    capeCounter: 12,
     originDate: format(new Date(1996, 5, 1), inputDateFormat),
     description: 'fashionista',
   },
