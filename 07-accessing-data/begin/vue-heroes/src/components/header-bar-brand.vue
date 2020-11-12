@@ -9,9 +9,9 @@
       <i class="fab js-logo fa-vuejs fa-2x" aria-hidden="true" />
     </a>
     <div class="navbar-item nav-home">
-      <span class="tour">TOUR</span>
-      <span class="of">OF</span>
-      <span class="heroes">HEROES</span>
+      <span class="tour">ITS</span>
+      <span class="of">JUST</span>
+      <span class="heroes">CHUCK</span>
     </div>
     <button
       class="link navbar-burger burger"
