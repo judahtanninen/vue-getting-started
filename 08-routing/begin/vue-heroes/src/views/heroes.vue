@@ -2,7 +2,7 @@
   <div class="content-container">
     <div class="columns">
       <div class="column is-8">
-        <div class="section content-title-group" v-if="!selectedHero">
+        <div class="section content-title-group">
           <h2 class="title">Heroes</h2>
           <ul>
             <li v-for="hero in heroes" :key="hero.id">
@@ -16,23 +16,18 @@
                   </div>
                 </div>
                 <footer class="card-footer">
-                  <button
+                  <router-link :to="{name: 'hero-detail', params:{ id: hero.id} }"
+                  tag="button"
                     class="link card-footer-item"
-                    @click="selectHero(hero)"
-                  >
+                    >
                     <i class="fas fa-check"></i>
                     <span>Select</span>
-                  </button>
+                   </router-link>
                 </footer>
               </div>
             </li>
           </ul>
-        </div>
-        <HeroDetail
-          v-if="selectedHero"
-          :id="selectedHero.id"
-          @done="loadHeroes"
-        />
+        </div>    
         <div class="notification is-info" v-show="message">{{ message }}</div>
       </div>
     </div>
@@ -41,7 +36,6 @@
 
 <script>
 import { dataService } from '../shared';
-import HeroDetail from './hero-detail';
 
 export default {
   name: 'Heroes',
@@ -49,27 +43,20 @@ export default {
     return {
       heroes: [],
       message: '',
-      selectedHero: undefined,
     };
   },
-  components: {
-    HeroDetail,
-  },
+
   async created() {
     await this.loadHeroes();
   },
   methods: {
     async loadHeroes() {
       this.heroes = [];
-      this.selectedHero = undefined;
       this.message = 'getting the heroes, please be patient';
 
       this.heroes = await dataService.getHeroes();
 
       this.message = '';
-    },
-    selectHero(hero) {
-      this.selectedHero = hero;
     },
   },
 };

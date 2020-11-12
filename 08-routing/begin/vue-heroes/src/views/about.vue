@@ -2,10 +2,10 @@
   <div class="content-container">
     <div class="section content-title-group">
       <h2 class="title">About Vue Getting Started</h2>
-      <p>here are some helpful resources for this project.</p>
+      <p>This is the about page...</p>
       <p>
         by
-        <a href="http://twitter.com/john_papa">John Papa</a>
+        <a href="https://chucknorris.com">Judah Tanninen</a>
       </p>
       <br />
       <h3 class="title sub-title">Source Code</h3>
