@@ -1,15 +1,15 @@
 [
   {
     "id": 10,
-    "firstName": "Ella",
+    "firstName": "Big",
     "lastName": "Papa",
     "capeCounter": 1,
     "originDate": "June 06, 1996",
-    "description": "fashionista"
+    "description": "Rapper"
   },
   {
     "id": 20,
-    "firstName": "Madelyn",
+    "firstName": "Little",
     "lastName": "Papa",
     "capeCounter": 3,
     "originDate": "08/01/1998",
@@ -17,7 +17,7 @@
   },
   {
     "id": 30,
-    "firstName": "Haley",
+    "firstName": "Dinky",
     "lastName": "Papa",
     "capeCounter": 2,
     "originDate": "09/01/1999",
@@ -25,10 +25,10 @@
   },
   {
     "id": 40,
-    "firstName": "Landon",
-    "lastName": "Papa",
+    "firstName": "Chuck",
+    "lastName": "Norris",
     "capeCounter": 0,
     "originDate": "10/01/2000",
-    "description": "arc trooper"
+    "description": "Ominpotent god"
   }
 ]

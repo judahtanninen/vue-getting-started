@@ -62,10 +62,10 @@ export default {
     this.loadHeroes();
   },
   methods: {
-    loadHeroes() {
+    async loadHeroes() {
       this.heroes = [];
       this.message = 'getting the heroes, please be patient';
-      this.heroes = data.ourHeroes;
+      this.heroes = await data.getHeroes();
       this.message = '';
     },
     cancelHero() {
