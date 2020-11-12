@@ -25,12 +25,11 @@
       "description": "pen wielder"
     },
     {
-      "id": 40,
-      "firstName": "Landon",
-      "lastName": "Papa",
-      "capeCounter": 0,
-      "originDate": "10/01/2000",
-      "description": "arc trooper"
+      "firstName": "Bob",
+      "lastName": "Laska",
+      "description": "Uh huh",
+      "id": 31,
+      "fullName": "Bob Laska"
     }
   ],
   "villains": [
