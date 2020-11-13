@@ -67,7 +67,6 @@ export default {
   name: 'Heroes',
   data() {
     return {
-      heroes: [],
       heroToDelete: null,
       message: '',
       showModal: false,
@@ -95,9 +94,8 @@ export default {
       await this.loadHeroes();
     },
     async loadHeroes() {
-      this.heroes = [];
       this.message = 'getting the heroes, please be patient';
-      this.heroes = await dataService.getHeroes();
+      //this.heroes = await dataService.getHeroes();
       this.message = '';
     },
   },

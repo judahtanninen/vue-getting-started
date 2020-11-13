@@ -30,6 +30,12 @@
       "description": "Uh huh",
       "id": 31,
       "fullName": "Bob Laska"
+    },
+    {
+      "firstName": "Chuck",
+      "lastName": "Norris",
+      "description": "fashionistav",
+      "id": 32
     }
   ],
   "villains": [
