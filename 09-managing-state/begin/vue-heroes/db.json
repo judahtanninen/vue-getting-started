@@ -2,11 +2,12 @@
   "heroes": [
     {
       "id": 10,
-      "firstName": "Ella",
+      "firstName": "j",
       "lastName": "Papa",
       "capeCounter": 1,
       "originDate": "1996-06-06",
-      "description": "fashionista"
+      "description": "fashionista",
+      "fullName": " Papa"
     },
     {
       "id": 20,
@@ -22,7 +23,8 @@
       "lastName": "Papa",
       "capeCounter": 2,
       "originDate": "09/01/1999",
-      "description": "pen wielder"
+      "description": "pen wielder",
+      "fullName": "Haley Papa"
     },
     {
       "firstName": "Bob",
@@ -34,8 +36,9 @@
     {
       "firstName": "Chuck",
       "lastName": "Norris",
-      "description": "fashionistav",
-      "id": 32
+      "description": "gof",
+      "id": 32,
+      "fullName": "Chuck Norris"
     }
   ],
   "villains": [
